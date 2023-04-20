@@ -31,7 +31,8 @@ public class RondaTest {
        
         ronda.agregarPartido(partido);
         
-        assertTrue(ronda.existePartido(partido));
+        assertEquals(ronda.getPartidos().get(0),partido);
+        
     }
 
     /**
@@ -45,7 +46,9 @@ public class RondaTest {
        Equipo equipo_2=new Equipo("Brazil");
        Partido partido=new Partido(equipo_1,4,4,equipo_2,1);
        
+       ronda.agregarPartido(partido);
        
+       assertTrue(ronda.existePartido(partido));      
     }
     
 }

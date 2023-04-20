@@ -29,6 +29,33 @@ public class participanteTest {
         
         participante.agregarPronostico(pronostico);
         
+        assertEquals(participante.getPronosticos().get(0),pronostico);
+     }
+     
+     @Test
+     public void noExisteElPronostico() {
+     
+        Equipo equipo_1=new Equipo("Argentina");
+        Equipo equipo_2=new Equipo("Brazil");
+        Partido partido=new Partido(equipo_1,4,4,equipo_2,1);
+        Pronostico pronostico= new Pronostico(partido,ResultadoEnum.EMPATE);
+        Participante participante = new Participante (1,"Alejandro"); 
+        Pronostico noExistePronostico= new Pronostico(partido,ResultadoEnum.GANA_EQUIPO_1);
+        participante.agregarPronostico(pronostico);
+        
+        assertFalse(participante.existeElPronsotico(noExistePronostico));
+     }
+     
+        @Test
+        public void ExisteElPronostico() {
+     
+        Equipo equipo_1=new Equipo("Argentina");
+        Equipo equipo_2=new Equipo("Brazil");
+        Partido partido=new Partido(equipo_1,4,4,equipo_2,1);
+        Pronostico pronostico= new Pronostico(partido,ResultadoEnum.EMPATE);
+        Participante participante = new Participante (1,"Alejandro"); 
+        participante.agregarPronostico(pronostico);
+        
         assertTrue(participante.existeElPronsotico(pronostico));
      }
      

@@ -25,12 +25,11 @@ public class participanteTest {
         Equipo equipo_2=new Equipo("Brazil");
         Partido partido=new Partido(equipo_1,4,4,equipo_2,1);
         Pronostico pronostico= new Pronostico(partido,ResultadoEnum.EMPATE);
-        Pronostico pronostico1= new Pronostico(partido,ResultadoEnum.EMPATE);
         Participante participante = new Participante (1,"Alejandro"); 
         
         participante.agregarPronostico(pronostico);
         
-        assertTrue(participante.existeElPronsotico(pronostico1));
+        assertTrue(participante.existeElPronsotico(pronostico));
      }
      
     

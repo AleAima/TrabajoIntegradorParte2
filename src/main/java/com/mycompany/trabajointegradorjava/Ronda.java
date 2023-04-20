@@ -26,13 +26,6 @@ public class Ronda {
         this.partidos.add(partido);
     }
     
-    public void AgregarRonda(List<Partido> partidos){
-        for(Partido partido : partidos){
-           this.partidos.add(partido);
-        }
-        
-    }
-    
     public int getRonda() {
         return ronda;
     }
@@ -48,7 +41,7 @@ public class Ronda {
         }    
     }
     
-    private boolean existePartido(Partido partido){
+    public boolean existePartido(Partido partido){
         for(Partido parti : this.getPartidos()){
             if(parti.getEquipoUno().getNombre().equals(partido.getEquipoUno().getNombre())&&
                parti.getEquipoDos().getNombre().equals(partido.getEquipoDos().getNombre())){

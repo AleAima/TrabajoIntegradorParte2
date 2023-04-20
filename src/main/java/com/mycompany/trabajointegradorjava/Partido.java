@@ -13,13 +13,11 @@ public class Partido {
     private Equipo equipoDos;
     private int golesEquipoUno;
     private int golesEquipoDos;
-    private int ronda;
+    private final int ronda;
     
     public Partido(Equipo equipoUno, int golesEquipoUno, int golesEquipoDos, Equipo equipoDos, int ronda){
         this.equipoUno=equipoUno;
         this.equipoDos=equipoDos;
-      //  verificarGoles(golesEquipoUno);
-        //verificarGoles(golesEquipoUno);
         this.golesEquipoUno=golesEquipoUno;
         this.golesEquipoDos=golesEquipoDos;
         this.ronda=ronda;
@@ -80,12 +78,5 @@ public class Partido {
                         String.valueOf(golesEquipoDos),equipoDos.getNombre()};
                         
         return datos;
-    }
-    private boolean verificarGoles(int goles){
-        if(goles<0){
-            System.out.println("Los Goles No puede ser numeros Negativos");
-        }
-        return true;
-    }
-    
+    }   
 }

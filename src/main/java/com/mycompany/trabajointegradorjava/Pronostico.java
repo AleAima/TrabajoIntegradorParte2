@@ -13,13 +13,13 @@ import java.util.HashMap;
 public class Pronostico {
     private Partido partido;
     private ResultadoEnum resultado;
-    private int puntaje;
+    private final int puntaje=1;
     
     public Pronostico(Partido partido, ResultadoEnum resultado){
         
         this.partido=partido;
         this.resultado=resultado;
-        this.puntaje=0;
+   
     }
     public Partido getPartido() {
         return this.partido;
@@ -35,7 +35,7 @@ public class Pronostico {
     
     public int decirPuntajeDelPronostico(){
         if(this.partido.decirResulado().equals(this.resultado)){
-            return 1;
+            return this.puntaje;
         }
         else{
             return 0;

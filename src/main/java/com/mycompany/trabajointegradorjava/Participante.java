@@ -74,6 +74,19 @@ public class Participante {
         return pronosticos;
     }
     
-    
+    public boolean existeElPronsotico(Pronostico pronos){
+        
+        
+        Pronostico pronosticoEncontrado=this.pronosticos.stream()
+                  .filter(pronostico -> pronostico.getPartido().getEquipoUno().getNombre()
+                  .equals(pronos.getPartido().getEquipoUno().getNombre())
+                  &&pronostico.getPartido().getEquipoDos().getNombre()
+                   .equals(pronos.getPartido().getEquipoDos().getNombre())
+                  &&pronostico.getResultado().equals(pronos.getResultado()))
+                  .findAny()
+                  .orElse(null);
+        
+        return pronosticoEncontrado != null;
+    }
     
 }

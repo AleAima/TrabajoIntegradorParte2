@@ -21,6 +21,9 @@ public class Pronostico {
         this.resultado=resultado;
         this.puntaje=0;
     }
+    public Partido getPartido() {
+        return this.partido;
+    }
 
     public ResultadoEnum getResultado() {
         return resultado;

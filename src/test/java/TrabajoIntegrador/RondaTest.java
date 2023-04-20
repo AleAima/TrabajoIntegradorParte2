@@ -51,4 +51,20 @@ public class RondaTest {
        assertTrue(ronda.existePartido(partido));      
     }
     
+       /**
+     * Test of existePartido method, of class Ronda.
+     */
+    @Test
+    public void testNoExistePartido() {
+        System.out.println(" Test existePartido");
+       Ronda ronda = new Ronda (1);
+       Equipo equipo_1=new Equipo("Brazil");
+       Equipo equipo_2=new Equipo("Argentina");
+       Partido partido=new Partido(equipo_1,4,4,equipo_2,1);
+       Partido noEstaPartido=new Partido(equipo_2,4,4,equipo_1,1);
+       ronda.agregarPartido(partido);
+       
+       assertFalse(ronda.existePartido(noEstaPartido));      
+    }
+    
 }

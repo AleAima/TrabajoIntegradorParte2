@@ -1,0 +1,19 @@
+﻿ ;nombre;Equipo1;GanoEquipo1;Empate;GanoEquipo2;Equipo2;Ronda
+1;Alejandro;Argentina;-;-;X;Arabia Saudita;1
+1;Alejandro;Polonia;-;X;-;Mexico;1
+1;Alejandro;Argentina;X;-;;Mexico;2
+1;Alejandro;Arabia Saudita;-;-;X;Polonia;2
+1;Alejandro;Argentina;X;-;-;Polonia;3
+1;Alejandro;Arabia Saudita;X;-;-;Mexico;3
+2;Christian;Argentina;X;-;-;Arabia Saudita;1
+2;Christian;Polonia;-;X;-;Mexico;1
+2;Christian;Argentina;-;-;X;Mexico;2
+2;Christian;Arabia Saudita;-;X;-;Polonia;2
+2;Christian;Argentina;X;-;-;Polonia;3
+2;Christian;Arabia Saudita;X;-;-;Mexico;3
+3;Elio;Argentina;X;-;-;Arabia Saudita;1
+3;Elio;Polonia;-;X;-;Mexico;1
+3;Elio;Argentina;-;-;X;Mexico;2
+3;Elio;Arabia Saudita;-;X;-;Polonia;2
+3;Elio;Argentina;X;-;-;Polonia;3
+3;Elio;Arabia Saudita;X;-;-;Mexico;3

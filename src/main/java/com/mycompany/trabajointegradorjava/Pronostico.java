@@ -39,9 +39,7 @@ public class Pronostico {
         }
         else{
             return 0;
-        }
-            
-            
+        }           
     }
     
     public void cantidadDePuntosPorResultado(int puntos){

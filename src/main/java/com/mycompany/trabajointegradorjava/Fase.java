@@ -20,4 +20,8 @@ public class Fase {
         rondas=new ArrayList<>();
     }
     
+    public void agreagrRonda(Ronda ronda){
+        rondas.add(ronda);
+    }
+    
 }

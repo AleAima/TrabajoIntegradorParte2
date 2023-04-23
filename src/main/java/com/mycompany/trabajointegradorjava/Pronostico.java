@@ -13,7 +13,7 @@ import java.util.HashMap;
 public class Pronostico {
     private Partido partido;
     private ResultadoEnum resultado;
-    private final int puntaje=1;
+    private int puntaje=1;
     
     public Pronostico(Partido partido, ResultadoEnum resultado){
         
@@ -42,6 +42,10 @@ public class Pronostico {
         }
             
             
+    }
+    
+    public void cantidadDePuntosPorResultado(int puntos){
+        this.puntaje=puntos;
     }
     
     //Metodo Para que me devuta el array de string que necesito para 

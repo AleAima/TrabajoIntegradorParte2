@@ -9,9 +9,12 @@ package com.mycompany.trabajointegradorjava;
  * @author aleai
  */
 public class PuntosExtrasPorFaseDeEquipos extends PuntosExtras{
-
+    private Fase fase;
+      public PuntosExtrasPorFaseDeEquipos(Fase fase){
+        this.fase=fase;
+    }
     @Override
-    public int calcularPuntosExtras(Participante participante) {
+    public int calcularPuntosExtras() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     

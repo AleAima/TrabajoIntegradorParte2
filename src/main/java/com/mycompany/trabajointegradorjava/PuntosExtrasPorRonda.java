@@ -9,10 +9,18 @@ package com.mycompany.trabajointegradorjava;
  * @author aleai
  */
 public class PuntosExtrasPorRonda extends PuntosExtras{
-
+    Ronda ronda;
+    public PuntosExtrasPorRonda(Ronda ronda){
+       
+        this.ronda=ronda;
+    }
     @Override
-    public int calcularPuntosExtras(Participante participante) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public int calcularPuntosExtras() {
+        int puntosExtras=0;
+        for(Partido partido : this.ronda.getPartidos() ){
+            
+        }
+      return puntosExtras; 
     }
     
     

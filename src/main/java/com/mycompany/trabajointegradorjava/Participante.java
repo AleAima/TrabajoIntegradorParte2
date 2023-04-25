@@ -17,6 +17,7 @@ public class Participante {
     private int puntaje;
     private int cantidadDeAciertos;
     private List<Pronostico>pronosticos;
+    private List<PuntosExtras> puntosExtras;
     
     public Participante(int id, String nombre){
         this.identificacion=id;

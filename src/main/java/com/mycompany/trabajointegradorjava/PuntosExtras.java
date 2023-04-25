@@ -11,6 +11,6 @@ package com.mycompany.trabajointegradorjava;
  */
 public abstract class PuntosExtras{
     
-    public abstract int calcularPuntosExtras(Participante participante);
+    public abstract int calcularPuntosExtras();
     
 }
